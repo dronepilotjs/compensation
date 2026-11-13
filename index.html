@@ -212,12 +212,15 @@ const L10N={
  cs:{'source':'Zdroj výrobce','legacyNote':'Historická databáze původního programu.','brandNote':'Systém výrobce: rozměry, modul pružnosti a součinitel roztažnosti ověřte v aktuálním katalogu.','subtitle':'Tepelná roztažnost potrubí a reakce pevných bodů · offline HTML 1.0.2','catalog':'Historické údaje: OPStaDat.txt. Nové výrobkové řady jsou vedeny odděleně s odkazy na výrobce. Ověřte aktuální technické listy.','warning':'Rekonstruované výpočetní jádro není validováno proti originálu. Parametry nových výrobkových systémů mohou být orientační. Skutečné pevné body navrhujte pouze s nezávislým statickým ověřením.','footer':'Zdroje: původní archiv Walraven a dokumentace výrobců. Výpočet probíhá lokálně v prohlížeči.'}
 };
 
+L10N.es={'Rozdíl teplot ΔT':'Diferencia de temperatura ΔT','Vstupní údaje':'Datos de entrada','Schéma kompenzace':'Esquema de compensación','Přímé':'Recto','Vlnovec':'Fuelle','Materiál / sortiment potrubí':'Material / gama de tuberías','Rozměr potrubí':'Dimensiones de la tubería','Montážní teplota [°C]':'Temperatura de instalación [°C]','Provozní teplota [°C]':'Temperatura de servicio [°C]','Délka potrubí L [m]':'Longitud de tubería L [m]','Provozní přetlak [bar]':'Presión manométrica de servicio [bar]','Geometrie kompenzátoru':'Geometría del compensador','Rameno / výška H [m]':'Brazo / altura H [m]','Šířka / přesazení B [m]':'Anchura / desfase B [m]','Vlnovcový kompenzátor':'Compensador de fuelle','Typ kompenzátoru z databáze':'Tipo de compensador de la base de datos','Efektivní plocha A [cm²]':'Área efectiva A [cm²]','Osová tuhost k [N/mm]':'Rigidez axial k [N/mm]','Volitelné vlivy':'Efectos opcionales','Celkové tření na vedení [N]':'Fricción total en guías [N]','Bezpečnostní násobek [-]':'Factor de diseño [-]','Přepočítat':'Calcular','Uložit zadání':'Guardar datos','Načíst zadání':'Cargar datos','Databáze potrubí a kompenzátorů':'Base de datos de tuberías y compensadores','Výsledky výpočtu':'Resultados del cálculo','Volná tepelná dilatace':'Dilatación térmica libre','Výsledná síla v pevném bodě':'Fuerza resultante en el punto fijo','Normálové napětí v potrubí':'Tensión axial en la tubería','Rozdíl teplot':'Diferencia de temperatura','Průřez stěny potrubí':'Área de pared de la tubería','Osová tuhost potrubí':'Rigidez axial de la tubería','Výpočtové schéma':'Esquema de cálculo','Rozpis veličin a zatížení':'Parámetros y cargas','Tisk / PDF':'Imprimir / PDF','Export výsledků CSV':'Exportar resultados CSV','Technické upozornění:':'Advertencia técnica:','Výrobce / databáze':'Fabricante / base de datos','Všechny systémy':'Todos los sistemas','Obecná databáze':'Base de datos general','source':'Fuente del fabricante','legacyNote':'Datos históricos del programa original.','brandNote':'Sistema del fabricante: verifique las dimensiones, el módulo de elasticidad y el coeficiente de dilatación en la ficha técnica vigente.','download':'Descargar','subtitle':'Dilatación térmica de tuberías y reacciones en puntos fijos · HTML sin conexión 1.1.4','catalog':'Datos históricos: OPStaDat.txt. Las nuevas gamas de producto se muestran por separado con enlaces a los fabricantes. Verifique las fichas técnicas vigentes.','warning':'El núcleo de cálculo reconstruido no está validado frente al software original. Los parámetros de los sistemas nuevos pueden ser orientativos. Dimensione los puntos fijos reales solo tras una verificación estática independiente.','footer':'Fuentes: archivo original de Walraven y documentación de fabricantes. El cálculo se ejecuta localmente en el navegador.','dimensions':'dimensiones','total':'Total','groups':'grupos de materiales','joints':'registros de fuelles','notScale':'Esquema ilustrativo · no está a escala'};
+
 const rowTranslations={
 'Vnější průměr':['Outer diameter','Średnica zewnętrzna','Vonkajší priemer'],'Tloušťka stěny':['Wall thickness','Grubość ścianki','Hrúbka steny'],'Součinitel dilatace':['Thermal expansion coefficient','Współczynnik rozszerzalności','Súčiniteľ tepelnej rozťažnosti'],'Modul pružnosti':['Young’s modulus','Moduł sprężystości','Modul pružnosti'],'Moment setrvačnosti':['Second moment of area','Moment bezwładności','Kvadratický moment prierezu'],'Základní reakce':['Base reaction','Reakcja podstawowa','Základná reakcia'],'Tření (celkem)':['Total friction','Tarcie (łącznie)','Trenie (celkom)'],'Návrhový součinitel':['Design factor','Współczynnik projektowy','Návrhový súčiniteľ'],'Síla od tlaku':['Pressure thrust','Siła od ciśnienia','Sila od tlaku'],'Síla od tuhosti vlnovce':['Bellows spring force','Siła sprężyny mieszka','Sila od tuhosti vlnovca'],'Reakce v PB1':['Anchor 1 reaction','Reakcja punktu stałego 1','Reakcia v PB1'],'Reakce v PB2':['Anchor 2 reaction','Reakcja punktu stałego 2','Reakcia v PB2'],'Max. uzlový posun':['Max. node displacement','Maks. przemieszczenie węzła','Max. uzlový posun'],
 'Pevné body na obou koncích, zcela zamezená osová dilatace.':['Both ends fixed; axial expansion fully restrained.','Punkty stałe na obu końcach; pełne ograniczenie wydłużenia osiowego.','Pevné body na oboch koncoch, osová dilatácia je úplne zamedzená.'],
 'Prostý model nevyváženého vlnovce: síla tlaku + síla pružiny. Bez předpětí a dynamických vlivů.':['Simplified unrestrained bellows: pressure thrust + spring force. No preload or dynamics.','Uproszczony model mieszka: siła od ciśnienia + sprężyna. Bez napięcia wstępnego i dynamiki.','Zjednodušený model nevyváženého vlnovca: sila od tlaku + pružinová sila. Bez predpätia a dynamických vplyvov.'],
 '2D rámová MKP, tuhý spoj ramen, oba konce plně vetknuté. Idealizovaná geometrie; nezohledněny mezilehlé kluzné podpory originálu.':['2D frame FEM, rigid corners, both ends fully fixed. Idealized geometry, no intermediate sliding guides.','MES ramowa 2D, sztywne naroża, oba końce utwierdzone. Geometria uproszczona, bez prowadnic pośrednich.','2D rámová MKP, tuhé spojenie ramien, oba konce úplne votknuté. Idealizovaná geometria.']};
-function dynamicLabel(v){let x=rowTranslations[v];return x?(language==='en'?x[0]:language==='pl'?x[1]:language==='sk'?x[2]||v:v):v}
+const rowTranslationsEs={'Vnější průměr':'Diámetro exterior','Tloušťka stěny':'Espesor de pared','Součinitel dilatace':'Coeficiente de dilatación térmica','Modul pružnosti':'Módulo de elasticidad','Moment setrvačnosti':'Segundo momento de área','Základní reakce':'Reacción básica','Ručně zadané tření':'Fricción introducida manualmente','Odhad tření v kluzných uloženích':'Fricción estimada en apoyos deslizantes','Návrhový součinitel':'Factor de diseño','Katalogové uložení':'Soporte de catálogo','Dovolené zatížení Fa,z':'Carga admisible Fa,z','Katalogová posuvná vzdálenost Ls':'Recorrido de catálogo Ls','Síla od tlaku':'Empuje por presión','Síla od tuhosti vlnovce':'Fuerza del muelle del fuelle','Reakce v PB1':'Reacción en punto fijo 1','Reakce v PB2':'Reacción en punto fijo 2','Max. uzlový posun':'Desplazamiento máximo del nodo','Počet mezilehlých podpor':'Número de apoyos intermedios','Pevné body na obou koncích, zcela zamezená osová dilatace.':'Ambos extremos fijos; dilatación axial completamente restringida.','Prostý model nevyváženého vlnovce: síla tlaku + síla pružiny. Bez předpětí a dynamických vlivů.':'Modelo simplificado de fuelle no equilibrado: empuje por presión + fuerza de muelle. Sin precarga ni efectos dinámicos.','2D rámová MKP, tuhý spoj ramen, oba konce plně vetknuté. Idealizovaná geometrie; nezohledněny mezilehlé kluzné podpory originálu.':'Modelo de pórtico FEM 2D, uniones rígidas y ambos extremos empotrados. Geometría idealizada; sin guías deslizantes intermedias.'};
+function dynamicLabel(v){if(language==='es')return rowTranslationsEs[v]||v;let x=rowTranslations[v];return x?(language==='en'?x[0]:language==='pl'?x[1]:language==='sk'?x[2]||v:v):v}
 Object.assign(L10N.en,{dimensions:'sizes',total:'Total',groups:'material groups',joints:'bellows records',notScale:'Illustrative schematic · not to scale'});
 Object.assign(L10N.pl,{dimensions:'rozmiarów',total:'Łącznie',groups:'grup materiałów',joints:'kompensatorów',notScale:'Schemat poglądowy · nie w skali'});
 Object.assign(L10N.cs,{dimensions:'rozměrů',total:'Celkem',groups:'materiálových skupin',joints:'záznamů vlnovců',notScale:'Schéma je ilustrativní, není v měřítku'});
@@ -236,7 +239,30 @@ function updateGuideLocale(){const data={cs:['Zahrnout mezilehlá uložení','Po
 function bupLocale(){
  const v={cs:['Výrobek Walraven – kontrola zatížení a posuvu','Požadovaný posuv jedné podpory [mm]','Kontrola posuvu','Obecné uložení (bez katalogového limitu)'],en:['Walraven product – load and travel check','Required travel per support [mm]','Travel check','Generic support (no catalogue limits)'],pl:['Produkt Walraven – kontrola obciążenia i przesuwu','Wymagany przesuw jednej podpory [mm]','Kontrola przesuwu','Podpora ogólna (bez limitów katalogowych)'],sk:['Výrobok Walraven – kontrola zaťaženia a posuvu','Požadovaný posuv jednej podpery [mm]','Kontrola posuvu','Všeobecné uloženie (bez katalógového limitu)']}[language];['guideProductLabel','guideTravelLabel','guideMountLabel'].forEach((id,i)=>$(id).textContent=v[i]);$('guideProduct').options[0].textContent=v[3];}
 document.querySelectorAll('.lang').forEach(b=>b.onclick=()=>setLanguage(b.dataset.lang));$('useGuides').addEventListener('change',calc);$('guidePositions').addEventListener('change',calc);$('guideType').addEventListener('change',calc);$('guideLoad').addEventListener('change',calc);$('guideMu').addEventListener('change',calc);$('guideProduct').addEventListener('change',calc);$('guideTravel').addEventListener('change',calc);$('guidePositions').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();e.target.blur();}});$('maker').onchange=populate;
-populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return localStorage.getItem('walraven_lang')}catch(_){return 'cs'}})())?(function(){try{return localStorage.getItem('walraven_lang')}catch(_){return 'cs'}})():'cs');
+(function(){
+ const menu=document.querySelector('.language-menu');
+ if(menu&&!menu.querySelector('[data-lang="es"]')){const button=document.createElement('button');button.type='button';button.className='lang';button.dataset.lang='es';button.title='Español';button.setAttribute('aria-label','Español');button.setAttribute('aria-pressed','false');button.textContent='🇪🇸';button.onclick=()=>setLanguage('es');menu.appendChild(button)}
+ if(menu)menu.setAttribute('aria-label','Language / Jazyk / Język / Jazyk / Idioma');
+ const groupLabelOriginal=groupLabel;
+ groupLabel=function(g){if(language!=='es')return groupLabelOriginal(g);let x=g.name;const dict=[['Ocelové trubky','Tuberías de acero'],['Měděné trubky','Tuberías de cobre'],['Plastové trubky','Tuberías de plástico'],['Polyetylenové trubky','Tuberías de polietileno'],['Polypropylenové trubky','Tuberías de polipropileno'],['Stabilizované PP trubky','Tuberías PP estabilizadas'],['Uhlíková ocel','Acero al carbono'],['Nerezová ocel','Acero inoxidable'],['Vícevrstvé','Multicapa'],['Vlnovcový kompenzátor','Compensador de fuelle']];for(const [from,to] of dict)x=x.replace(from,to);return x};
+ const translateNoteOriginal=translateNote;
+ translateNote=function(g){return language==='es'?(g.manufacturer?t('brandNote'):t('legacyNote')):translateNoteOriginal(g)};
+ const updateDtEquivalentOriginal=updateDtEquivalent;
+ updateDtEquivalent=function(){if(language!=='es')return updateDtEquivalentOriginal();const el=$('dtEquivalent'),delta=n('t1')-n('t0');if(!el)return;if(!Number.isFinite(delta)){el.textContent='';return}el.textContent='(equivale a una diferencia de temperatura de '+fmt(delta,1)+' °C)'};
+ const updateBrandLocaleOriginal=updateBrandLocale;
+ updateBrandLocale=function(nextLanguage){updateBrandLocaleOriginal(nextLanguage);const spanish=nextLanguage==='es',slogan=document.querySelector('.wr-topbar [data-brand-key="slogan"]'),pill=document.querySelector('header .pill'),eyebrow=document.querySelector('.wr-hero-eyebrow'),home=document.querySelector('.wr-topbar nav a');document.title=spanish?'Walraven COMPENSATION | Calculadora de dilatación de tuberías':'Walraven COMPENSATION | Pipe Expansion Calculator';if(slogan)slogan.textContent=spanish?'Multinacional con corazón | Desde 1942':'Multinational with a heart | Since 1942';if(pill)pill.textContent=spanish?'Sin conexión · sin instalación':'Offline · bez instalace';if(eyebrow)eyebrow.textContent=spanish?'SOLUCIONES DE FIJACIÓN A MEDIDA':'CUSTOM FIXING SOLUTIONS';if(home){home.textContent=spanish?'⌂ Inicio':'⌂ Home';home.setAttribute('aria-label',spanish?'Inicio – página principal':'Home – hlavní rozcestník')}};
+ const updateGuideLocaleOriginal=updateGuideLocale;
+ updateGuideLocale=function(){if(language!=='es')return updateGuideLocaleOriginal();const v=['Incluir soportes intermedios','Posiciones de los soportes desde PB1 a lo largo de la longitud desarrollada [m] (separe con punto y coma)','Un apoyo deslizante no bloquea el movimiento en el plano de este modelo 2D. La fricción es solo una envolvente de diseño orientativa, no una fuerza FEM. Verifique el producto, la carga vertical y el sentido del deslizamiento.','Tipo de soporte','Carga vertical por soporte [N]','Coeficiente de fricción deslizante μ [-]','Apoyo deslizante (sin restricción en el plano)','Guía lateral (movimiento normal = 0)'];['guideTitle','guidePositionsLabel','guideHelp','guideTypeLabel','guideLoadLabel','guideMuLabel'].forEach((name,index)=>$(name).textContent=v[index]);$('guidePositions').placeholder='p. ej. 2; 5; 8';$('guideType').options[0].textContent=v[6];$('guideType').options[1].textContent=v[7]};
+ const bupLocaleOriginal=bupLocale;
+ bupLocale=function(){if(language!=='es')return bupLocaleOriginal();const v=['Producto Walraven – comprobación de carga y recorrido','Recorrido requerido por soporte [mm]','Comprobación de recorrido','Soporte genérico (sin límites de catálogo)'];['guideProductLabel','guideTravelLabel','guideMountLabel'].forEach((name,index)=>$(name).textContent=v[index]);$('guideTravel').placeholder='Introduzca para comprobar';$('guideProduct').options[0].textContent=v[3];$('guideProduct').options[1].textContent='BUP1000 · 6668813 · orificio 13/17 mm · Ls 120 mm · Fa,z 7 500 N';$('guideProduct').options[2].textContent='BUP1000 métrico · 6668612 · M10/M12 · Ls 60 mm · Fa,z 1 500 N'};
+ const schemeTrOriginal=schemeTr;
+ schemeTr=function(key){if(language!=='es')return schemeTrOriginal(key);const v={dims:'Cotas',forces:'Fuerzas y sentidos',deform:'Deformación térmica',download:'Exportar SVG',length:'Longitud',height:'Altura',width:'Anchura',offset:'Desfase',left:'Brazo izquierdo',right:'Brazo derecho',reaction:'Fuerza en punto fijo',components:'Componentes de fuerza',thermal:'Dilatación libre',temp:'Diferencia de temperatura',nonScale:'Esquema no a escala',notVerified:'Modelo de cálculo orientativo',error:'Cálculo no disponible',anchor:'Punto fijo'};return v[key]||key};
+ const bupProductCheckOriginal=bupProductCheck;
+ bupProductCheck=function(){if(language!=='es')return bupProductCheckOriginal();const prod=BUP_PRODUCTS[$('guideProduct').value]||null,enabled=$('useGuides').checked,loadText=$('guideLoad').value.trim(),load=loadText===''?NaN:Number(loadText),travelText=$('guideTravel').value.trim(),travel=travelText===''?NaN:Number(travelText);$('guideProductSource').innerHTML=prod?`<a href="${prod.url}" target="_blank" rel="noopener noreferrer">${prod.name.replace('metrický','métrico')} – catálogo Walraven ↗</a>`:'';if(!enabled){$('guideProductStatus').textContent='La comprobación está inactiva hasta activar los soportes.';$('guideMount').value='—';return}if(!prod){$('guideProductStatus').textContent='Soporte genérico: no hay límites de catálogo seleccionados.';$('guideMount').value='—';return}const overload=Number.isFinite(load)&&load>prod.capacity,overtravel=Number.isFinite(travel)&&travel>prod.stroke,unknown=!Number.isFinite(travel)||!Number.isFinite(load);let status=overload||overtravel?'⚠ Se supera el límite de catálogo.':unknown?'⚠ Introduzca la carga y el recorrido requerido para comprobar los límites.':'✓ Los valores introducidos están dentro de los límites indicados (solo preliminar).';status+=` Carga máx.: ${prod.capacity.toLocaleString('es-ES')} N; Ls: ${prod.stroke} mm.`;status+=' Ls es un recorrido de catálogo, no necesariamente un recorrido ± desde el centro; verifique la posición de montaje y la instalación real.';$('guideProductStatus').style.color=overload||overtravel?'#ab2929':'#5e7080';$('guideProductStatus').textContent=status;$('guideMount').value=Number.isFinite(travel)?`${travel.toLocaleString('es-ES')} / ${prod.stroke} mm`:'No introducido'};
+}());
+const spanishLanguageCleanup=setLanguage;
+setLanguage=function(nextLanguage){const result=spanishLanguageCleanup(nextLanguage),spanish=nextLanguage==='es',diagram=$('diagram');if(diagram)diagram.setAttribute('aria-label',spanish?'Esquema de la tubería y puntos fijos':'Schéma potrubí a pevných bodů');if(!spanish){$('guidePositions').placeholder='např. 2; 5; 8';$('guideTravel').placeholder='Zadejte pro kontrolu';$('guideProduct').options[1].textContent='BUP1000 · 6668813 · otvor 13/17 mm · Ls 120 mm · Fa,z 7 500 N';$('guideProduct').options[2].textContent='BUP1000 metrické · 6668612 · M10/M12 · Ls 60 mm · Fa,z 1 500 N'}return result};
+populate();setLanguage(['cs','en','pl','sk','es'].includes((function(){try{return localStorage.getItem('walraven_lang')}catch(_){return 'cs'}})())?(function(){try{return localStorage.getItem('walraven_lang')}catch(_){return 'cs'}})():'cs');
 </script>
 <style id="engineering-safety-styles">
 .engineering-panel {
@@ -328,7 +354,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
 </style>
 <script id="engineering-safety-upgrade">
 /*
- * Walraven COMPENSATION – engineering safety layer 1.1.2
+ * Walraven COMPENSATION – engineering safety layer 1.1.4
  *
  * This is a transparent preliminary calculation layer. It intentionally does
  * not claim compliance with a piping design code or replace a design review.
@@ -355,8 +381,12 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       temperature: 'Teplotní obálka pro kontrolu zdvihu',
       tMin: 'Minimální provozní teplota [°C]',
       tMax: 'Maximální provozní teplota [°C]',
-      beta: 'Úhel β ramene vůči podélné větvi [°]',
-      betaDetail: 'β – úhel ramene',
+      beta: 'Vnitřní úhel β L-kompenzace [°]',
+      betaDetail: 'β – vnitřní úhel L',
+      angleShape: 'Tvar L-kompenzace',
+      convex: 'Konvexní (β < 90°)',
+      rightAngle: 'Pravoúhlá (β = 90°)',
+      concave: 'Konkávní (β > 90°)',
       projectionDetail: 'Projekce šikmého ramene H',
       armL: 'Délka šikmého ramene H [m]',
       lTitle: 'L-kompenzace',
@@ -420,7 +450,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Kontrola vedení axiálního vlnovce',
       firstGuide: '1. vedení',
       secondGuide: '2. vedení',
-      header: 'verze HTML 1.1.2 · bezpečnostní kontrola',
+      header: 'verze HTML 1.1.4 · bezpečnostní kontrola',
       error: 'Chyba bezpečnostního výpočtu: '
     },
     en: {
@@ -431,8 +461,12 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       temperature: 'Temperature envelope for travel check',
       tMin: 'Minimum operating temperature [°C]',
       tMax: 'Maximum operating temperature [°C]',
-      beta: 'Arm angle β to the longitudinal leg [°]',
-      betaDetail: 'β – arm angle',
+      beta: 'Internal angle β of the L compensation [°]',
+      betaDetail: 'β – internal L angle',
+      angleShape: 'L-compensation form',
+      convex: 'Convex (β < 90°)',
+      rightAngle: 'Right angle (β = 90°)',
+      concave: 'Concave (β > 90°)',
       projectionDetail: 'Angled-arm projections H',
       armL: 'Angled-arm length H [m]',
       lTitle: 'L compensation',
@@ -496,7 +530,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Axial-bellows guide check',
       firstGuide: '1st guide',
       secondGuide: '2nd guide',
-      header: 'HTML version 1.1.2 · engineering safety check',
+      header: 'HTML version 1.1.4 · engineering safety check',
       error: 'Safety calculation error: '
     },
     pl: {
@@ -507,8 +541,12 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       temperature: 'Zakres temperatur do kontroli przesuwu',
       tMin: 'Minimalna temperatura pracy [°C]',
       tMax: 'Maksymalna temperatura pracy [°C]',
-      beta: 'Kąt β ramienia względem odcinka podłużnego [°]',
-      betaDetail: 'β – kąt ramienia',
+      beta: 'Kąt wewnętrzny β kompensacji L [°]',
+      betaDetail: 'β – kąt wewnętrzny L',
+      angleShape: 'Forma kompensacji L',
+      convex: 'Wypukła (β < 90°)',
+      rightAngle: 'Prostokątna (β = 90°)',
+      concave: 'Wklęsła (β > 90°)',
       projectionDetail: 'Rzuty ukośnego ramienia H',
       armL: 'Długość ramienia ukośnego H [m]',
       lTitle: 'Kompensacja L',
@@ -572,7 +610,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Kontrola prowadzeń mieszków osiowych',
       firstGuide: '1. prowadzenie',
       secondGuide: '2. prowadzenie',
-      header: 'HTML 1.1.2 · kontrola bezpieczeństwa technicznego',
+      header: 'HTML 1.1.4 · kontrola bezpieczeństwa technicznego',
       error: 'Błąd kontroli technicznej: '
     },
     sk: {
@@ -583,8 +621,12 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       temperature: 'Teplotná obálka pre kontrolu posuvu',
       tMin: 'Minimálna prevádzková teplota [°C]',
       tMax: 'Maximálna prevádzková teplota [°C]',
-      beta: 'Uhol β ramena voči pozdĺžnej vetve [°]',
-      betaDetail: 'β – uhol ramena',
+      beta: 'Vnútorný uhol β L-kompenzácie [°]',
+      betaDetail: 'β – vnútorný uhol L',
+      angleShape: 'Tvar L-kompenzácie',
+      convex: 'Konvexná (β < 90°)',
+      rightAngle: 'Pravouhlá (β = 90°)',
+      concave: 'Konkávna (β > 90°)',
       projectionDetail: 'Projekcie šikmého ramena H',
       armL: 'Dĺžka šikmého ramena H [m]',
       lTitle: 'L-kompenzácia',
@@ -648,8 +690,88 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Kontrola vedenia axiálneho vlnovca',
       firstGuide: '1. vedenie',
       secondGuide: '2. vedenie',
-      header: 'HTML 1.1.2 · bezpečnostná technická kontrola',
+      header: 'HTML 1.1.4 · bezpečnostná technická kontrola',
       error: 'Chyba bezpečnostného výpočtu: '
+    },
+    es: {
+      title: 'Modelo de puntos fijos y envolvente térmica',
+      rotation: 'Transmisión de momento en ambos puntos fijos',
+      rotationFree: 'Punto fijo articulado – giro libre (predeterminado)',
+      rotationFixed: 'Punto fijo empotrado – giro bloqueado',
+      temperature: 'Envolvente de temperatura para comprobar el recorrido',
+      tMin: 'Temperatura mínima de servicio [°C]',
+      tMax: 'Temperatura máxima de servicio [°C]',
+      beta: 'Ángulo interno β de la compensación L [°]',
+      betaDetail: 'β – ángulo interno de L',
+      angleShape: 'Forma de la compensación L',
+      convex: 'Convexa (β < 90°)',
+      rightAngle: 'Ángulo recto (β = 90°)',
+      concave: 'Cóncava (β > 90°)',
+      projectionDetail: 'Proyecciones del brazo inclinado H',
+      armL: 'Longitud del brazo inclinado H [m]',
+      lTitle: 'Compensación L',
+      anchorHelp: 'Los puntos fijos restringen ambas traslaciones en el plano. Bloquee el giro solo cuando la estructura y el anclaje estén verificados para transmitir momentos.',
+      bellowsTitle: 'Datos de diseño y guiado del fuelle',
+      arrangement: 'Configuración del fuelle',
+      unrestrained: 'Fuelle axial no restringido',
+      tied: 'Fuelle con tirantes',
+      hinged: 'Fuelle articulado',
+      balanced: 'Fuelle equilibrado por presión',
+      designPressure: 'Presión manométrica de diseño [bar]',
+      testPressure: 'Presión manométrica de prueba [bar] (opcional)',
+      travel: 'Recorrido total admisible del fabricante [mm]',
+      cycles: 'Número de ciclos de trabajo (informativo)',
+      guide1: '1.ª guía desde el fuelle [mm]',
+      guide2: '2.ª guía desde la 1.ª guía [mm]',
+      bellowsHelp: 'El empuje por presión utiliza el área efectiva del fabricante. La fuerza en puntos fijos de fuelles con tirantes, articulados o equilibrados requiere datos del fabricante.',
+      forceLabel: 'Envolvente orientativa de fuerza',
+      stressLabel: 'Tensión axial elástica',
+      forceXLabel: 'Máx. |Fx| en puntos fijos',
+      forceYLabel: 'Máx. |Fy| en puntos fijos',
+      forceComponents: 'Componentes de reacción Fx / Fy',
+      componentNote: 'Fx es la componente horizontal en X; Fy es la componente perpendicular en Y.',
+      componentFrictionNote: 'La fricción no se reparte entre Fx/Fy; su dirección depende del movimiento real y del guiado.',
+      screening: 'Comprobación técnica preliminar',
+      status: 'Estado de la comprobación técnica',
+      warning: 'Los resultados son solo preliminares. No incluyen una comprobación según normativa de tuberías ni el diseño de la estructura de acero.',
+      freeAnchor: 'Los giros de los puntos fijos están liberados.',
+      fixedAnchor: 'Los giros de los puntos fijos se idealizan como empotrados.',
+      plastic: 'En plásticos, E y α dependen de la temperatura y del tiempo; no diseñe puntos fijos con estos valores sin datos del fabricante.',
+      material: 'Las propiedades del material son orientativas; verifique la ficha técnica vigente y el intervalo de temperatura.',
+      bends: 'El FEM no incluye el radio real de los codos, SIF, adelgazamiento ni una comprobación de tensiones combinadas.',
+      supports: 'Las guías y soportes no son un modelo 3D: verifique peso de tubería, fluido y aislamiento, holguras, estructura de soporte y dirección de fricción.',
+      bellows: 'El fuelle requiere confirmación del fabricante: movimiento admisible, ciclos, temperatura, estabilidad, preajuste de montaje y configuración.',
+      missing: 'Falta el dato: ',
+      noData: 'no se puede determinar sin datos del fabricante',
+      notEntered: 'no introducido',
+      within: 'dentro del límite introducido',
+      exceeds: 'supera el límite introducido',
+      freeExpansion: 'Dilatación libre',
+      temperatureRange: 'Intervalo de temperatura del recorrido',
+      selectedCase: 'Caso de temperatura seleccionado',
+      area: 'Área de pared de la tubería',
+      inertia: 'Segundo momento de área',
+      anchorModel: 'Modelo de punto fijo',
+      friction: 'Envolvente de fricción (acción independiente)',
+      multiplier: 'Multiplicador de envolvente del usuario',
+      envelope: 'Envolvente orientativa |R| + fricción',
+      reactions: 'Reacciones en puntos fijos – modelo 2D',
+      coordinate: 'Fx es la componente horizontal en X y Fy la componente perpendicular en Y; Mz es el momento transmitido a la estructura de soporte.',
+      guideReaction: 'Reacción de la guía lateral',
+      stressNote: 'Solo aplica a tubería recta con movimiento axial totalmente impedido; no es una comprobación normativa de tensiones.',
+      stressUnavailable: 'No se muestra la tensión axial en este modo: la reacción del punto fijo no es una fuerza axial de sección.',
+      operatingThrust: 'Empuje por presión a presión de servicio',
+      designThrust: 'Empuje por presión a presión de diseño',
+      testThrust: 'Empuje por presión a presión de prueba',
+      springForce: 'Fuerza de muelle del fuelle para el movimiento requerido',
+      bellowsForce: 'Fuerza preliminar determinante del fuelle',
+      movement: 'Movimiento requerido del fuelle',
+      travelCheck: 'Comprobación del recorrido admisible',
+      guideCheck: 'Comprobación de guías de fuelle axial',
+      firstGuide: '1.ª guía',
+      secondGuide: '2.ª guía',
+      header: 'HTML versión 1.1.4 · comprobación técnica de seguridad',
+      error: 'Error en el cálculo de seguridad: '
     }
   };
 
@@ -769,13 +891,24 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     }
   }
 
+  /* β is the internal elbow angle. The arm direction in the X/Y model is 180° − β. */
+  function lArmAngleRad(betaDeg) {
+    return (180 - betaDeg) * Math.PI / 180;
+  }
+
+  function lAngleShape(betaDeg) {
+    if (betaDeg < 90) return 'convex';
+    if (betaDeg > 90) return 'concave';
+    return 'rightAngle';
+  }
+
   function pointsFor(currentMode, lengthM, armM, widthM, betaDeg) {
     var length = lengthM * 1000;
     var arm = armM * 1000;
     var width = widthM * 1000;
     if (currentMode === 'L') {
-      var betaRad = betaDeg * Math.PI / 180;
-      return [[0, 0], [length, 0], [length + arm * Math.cos(betaRad), arm * Math.sin(betaRad)]];
+      var armAngle = lArmAngleRad(betaDeg);
+      return [[0, 0], [length, 0], [length + arm * Math.cos(armAngle), arm * Math.sin(armAngle)]];
     }
     if (currentMode === 'U') return [[0, 0], [length / 2, 0], [length / 2, arm], [length / 2 + width, arm], [length / 2 + width, 0], [length + width, 0]];
     if (currentMode === 'Z') return [[0, 0], [length / 2, 0], [length / 2, arm], [length / 2 + width, arm], [length / 2 + width, arm + length / 2]];
@@ -974,7 +1107,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     if (![length, arm, beta].every(finite) || length <= 0 || arm <= 0 || beta <= 0 || beta >= 180) return;
 
     var betaRad = beta * Math.PI / 180;
-    var physical = [[0, 0], [length, 0], [length + arm * Math.cos(betaRad), arm * Math.sin(betaRad)]];
+    var armAngle = lArmAngleRad(beta);
+    var angleShape = lAngleShape(beta);
+    var angleShapeText = tr(angleShape);
+    var angleShapeColor = angleShape === 'convex' ? '#176b54' : (angleShape === 'concave' ? '#9b4f1c' : '#375971');
+    var physical = [[0, 0], [length, 0], [length + arm * Math.cos(armAngle), arm * Math.sin(armAngle)]];
     var xs = physical.map(function (point) { return point[0]; });
     var ys = physical.map(function (point) { return point[1]; });
     var minX = Math.min.apply(null, xs);
@@ -1012,10 +1149,18 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     var armLabelX = (elbow[0] + p2[0]) / 2;
     var armLabelY = (elbow[1] + p2[1]) / 2 - 13;
     var angleRadius = 44;
-    var arcStart = [elbow[0] + angleRadius, elbow[1]];
-    var arcEnd = [elbow[0] + angleRadius * Math.cos(betaRad), elbow[1] - angleRadius * Math.sin(betaRad)];
-    var projectionX = arm * Math.cos(betaRad);
-    var projectionY = arm * Math.sin(betaRad);
+    var anglePath = (function () {
+      var steps = Math.max(6, Math.round(beta / 8));
+      var parts = [];
+      for (var index = 0; index <= steps; index += 1) {
+        var radialAngle = Math.PI - betaRad * index / steps;
+        parts.push((index === 0 ? 'M' : 'L') + coord(elbow[0] + angleRadius * Math.cos(radialAngle), elbow[1] - angleRadius * Math.sin(radialAngle)));
+      }
+      return parts.join(' ');
+    }());
+    var angleLabelRad = Math.PI - betaRad / 2;
+    var projectionX = arm * Math.cos(armAngle);
+    var projectionY = arm * Math.sin(armAngle);
     var projectionCorner = [p2[0], elbow[1]];
     var deformation = showDeformation ? '<path d="M' + coord(p1[0], p1[1] - 16) + ' L' + coord(elbow[0], elbow[1] - 16) + ' L' + coord(p2[0], p2[1] - 16) + '" fill="none" stroke="#e46c58" stroke-width="2.8" stroke-dasharray="8 6" stroke-linecap="round"/>' : '';
     var projections = '';
@@ -1036,8 +1181,8 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     var dimensions = showDimensions ? [
       '<text x="' + n((p1[0] + elbow[0]) / 2, 1) + '" y="' + n(p1[1] + 35, 1) + '" text-anchor="middle" font-size="14" font-weight="700" fill="#33475b">L = ' + escapeHtml(fmtValue(length, 2)) + ' m</text>',
       '<text x="' + n(armLabelX, 1) + '" y="' + n(armLabelY, 1) + '" text-anchor="middle" font-size="14" font-weight="700" fill="#33475b">H = ' + escapeHtml(fmtValue(arm, 2)) + ' m</text>',
-      '<path d="M' + coord(arcStart[0], arcStart[1]) + ' A' + n(angleRadius, 0) + ' ' + n(angleRadius, 0) + ' 0 0 0 ' + coord(arcEnd[0], arcEnd[1]) + '" fill="none" stroke="#8b5a20" stroke-width="2.3"/>',
-      '<text x="' + n(elbow[0] + 57 * Math.cos(betaRad / 2), 1) + '" y="' + n(elbow[1] - 57 * Math.sin(betaRad / 2), 1) + '" text-anchor="middle" font-size="15" font-weight="800" fill="#8b5a20">β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text>',
+      '<path d="' + anglePath + '" fill="none" stroke="#8b5a20" stroke-width="2.3"/>',
+      '<text x="' + n(elbow[0] + 57 * Math.cos(angleLabelRad), 1) + '" y="' + n(elbow[1] - 57 * Math.sin(angleLabelRad), 1) + '" text-anchor="middle" font-size="15" font-weight="800" fill="#8b5a20">β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text>',
       projections
     ].join('') : '';
     var anchor = function (point, label, vector) {
@@ -1050,7 +1195,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     if (result && result.femOut && result.femOut.guides) {
       result.femOut.guides.forEach(function (guide) {
         var station = guide.station;
-        var point = station <= length ? [station, 0] : [length + (station - length) * Math.cos(betaRad), (station - length) * Math.sin(betaRad)];
+        var point = station <= length ? [station, 0] : [length + (station - length) * Math.cos(armAngle), (station - length) * Math.sin(armAngle)];
         var mapped = map(point);
         guides += '<g><rect x="' + n(mapped[0] - 10, 1) + '" y="' + n(mapped[1] + 10, 1) + '" width="20" height="7" rx="2" fill="#c8b2a5" stroke="#926f5c"/><text x="' + n(mapped[0], 1) + '" y="' + n(mapped[1] + 32, 1) + '" text-anchor="middle" font-size="10" fill="#6d523f">KP</text></g>';
       });
@@ -1085,19 +1230,20 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       return '<g><path d="M' + coord(start[0], start[1]) + ' L' + coord(end[0], end[1]) + '" stroke="' + color + '" stroke-width="4" marker-end="url(#' + marker + ')"/><text x="' + n(caption[0], 1) + '" y="' + n(caption[1], 1) + '" text-anchor="' + anchor + '" font-size="12" font-weight="800" fill="' + color + '">' + label + '</text></g>';
     };
     var forces = showForces ? componentArrow(p1, fx1, 'x', 'Fx', -1) + componentArrow(p1, fy1, 'y', 'Fy', -1) + componentArrow(p2, fx2, 'x', 'Fx', 1) + componentArrow(p2, fy2, 'y', 'Fy', 1) : '';
-    var sidePanel = '<rect x="800" y="42" width="180" height="278" rx="13" fill="#f5f9fc" stroke="#dbe5ed"/>' +
+    var sidePanel = '<rect x="800" y="42" width="180" height="294" rx="13" fill="#f5f9fc" stroke="#dbe5ed"/>' +
       '<text x="820" y="70" font-size="14" font-weight="800" fill="#375971">β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text>' +
-      '<text x="820" y="96" font-size="12" fill="#6d8394">L = ' + escapeHtml(fmtValue(length, 2)) + ' m</text>' +
-      '<text x="820" y="119" font-size="12" fill="#6d8394">H = ' + escapeHtml(fmtValue(arm, 2)) + ' m</text>' +
-      '<text x="820" y="142" font-size="12" fill="#7a613d">Δx = ' + escapeHtml(fmtValue(projectionX, 2)) + ' m</text>' +
-      '<text x="820" y="165" font-size="12" fill="#7a613d">Δy = ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</text>' +
-      '<text x="820" y="193" font-size="12" font-weight="800" fill="#375971">PB1</text><text x="820" y="213" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx1)) + '</text><text x="820" y="231" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy1)) + '</text>' +
-      '<text x="820" y="257" font-size="12" font-weight="800" fill="#375971">PB2</text><text x="820" y="277" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx2)) + '</text><text x="820" y="295" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy2)) + '</text>';
-    var svg = '<defs><marker id="fxArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2459dc"/></marker><marker id="fyArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c4553d"/></marker></defs><rect width="1000" height="420" rx="14" fill="#ffffff"/><rect x="18" y="18" width="760" height="370" rx="12" fill="#f8fbfd" stroke="#dbe5ed"/><text x="42" y="49" font-size="19" font-weight="800" fill="#173a52">' + escapeHtml(tr('lTitle')) + ' · β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text><path d="' + route + '" fill="none" stroke="#e9f8f5" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#168c87" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#eefdfa" stroke-width="2.4" stroke-dasharray="11 6 2 6" stroke-linejoin="round" stroke-linecap="round"/>' + deformation + dimensions + guides + anchor(p1, 'PB1', reactionVector1) + anchor(p2, 'PB2', reactionVector2) + forces + sidePanel + '<text x="20" y="407" font-size="12" fill="#79909d">' + escapeHtml(tr('coordinate')) + '</text>';
+      '<text x="820" y="88" font-size="11" font-weight="800" fill="' + angleShapeColor + '">' + escapeHtml(angleShapeText) + '</text>' +
+      '<text x="820" y="112" font-size="12" fill="#6d8394">L = ' + escapeHtml(fmtValue(length, 2)) + ' m</text>' +
+      '<text x="820" y="135" font-size="12" fill="#6d8394">H = ' + escapeHtml(fmtValue(arm, 2)) + ' m</text>' +
+      '<text x="820" y="158" font-size="12" fill="#7a613d">Δx = ' + escapeHtml(fmtValue(projectionX, 2)) + ' m</text>' +
+      '<text x="820" y="181" font-size="12" fill="#7a613d">Δy = ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</text>' +
+      '<text x="820" y="209" font-size="12" font-weight="800" fill="#375971">PB1</text><text x="820" y="229" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx1)) + '</text><text x="820" y="247" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy1)) + '</text>' +
+      '<text x="820" y="273" font-size="12" font-weight="800" fill="#375971">PB2</text><text x="820" y="293" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx2)) + '</text><text x="820" y="311" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy2)) + '</text>';
+    var svg = '<defs><marker id="fxArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2459dc"/></marker><marker id="fyArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c4553d"/></marker></defs><rect width="1000" height="420" rx="14" fill="#ffffff"/><rect x="18" y="18" width="760" height="370" rx="12" fill="#f8fbfd" stroke="#dbe5ed"/><text x="42" y="49" font-size="19" font-weight="800" fill="#173a52">' + escapeHtml(tr('lTitle')) + ' · β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text><text x="42" y="71" font-size="12" font-weight="800" fill="' + angleShapeColor + '">' + escapeHtml(angleShapeText) + '</text><path d="' + route + '" fill="none" stroke="#e9f8f5" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#168c87" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#eefdfa" stroke-width="2.4" stroke-dasharray="11 6 2 6" stroke-linejoin="round" stroke-linecap="round"/>' + deformation + dimensions + guides + anchor(p1, 'PB1', reactionVector1) + anchor(p2, 'PB2', reactionVector2) + forces + sidePanel + '<text x="20" y="407" font-size="12" fill="#79909d">' + escapeHtml(tr('coordinate')) + '</text>';
     id('diagram').innerHTML = svg;
     id('diagram').setAttribute('aria-label', tr('lTitle') + ', β = ' + fmtValue(beta, 1) + '°');
     if (id('schemeResults')) {
-      id('schemeResults').innerHTML = '<div class="scheme-result"><strong>PB1 · Fx / Fy</strong><b style="display:block;color:#2459dc">Fx ' + escapeHtml(componentForce(fx1)) + '</b><b style="display:block;color:#c4553d">Fy ' + escapeHtml(componentForce(fy1)) + '</b><small>' + escapeHtml(tr('forceComponents')) + '</small></div><div class="scheme-result"><strong>PB2 · Fx / Fy</strong><b style="display:block;color:#2459dc">Fx ' + escapeHtml(componentForce(fx2)) + '</b><b style="display:block;color:#c4553d">Fy ' + escapeHtml(componentForce(fy2)) + '</b><small>' + escapeHtml(tr('forceComponents')) + '</small></div><div class="scheme-result"><strong>Δx / Δy</strong><b>' + escapeHtml(fmtValue(projectionX, 2)) + ' / ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</b><small>' + escapeHtml(tr('projectionDetail')) + '</small></div><div class="scheme-result"><strong>H</strong><b>' + escapeHtml(fmtValue(arm, 2)) + ' m</b><small>' + escapeHtml(tr('armL')) + '</small></div>';
+      id('schemeResults').innerHTML = '<div class="scheme-result"><strong>PB1 · Fx / Fy</strong><b style="display:block;color:#2459dc">Fx ' + escapeHtml(componentForce(fx1)) + '</b><b style="display:block;color:#c4553d">Fy ' + escapeHtml(componentForce(fy1)) + '</b><small>' + escapeHtml(tr('forceComponents')) + '</small></div><div class="scheme-result"><strong>PB2 · Fx / Fy</strong><b style="display:block;color:#2459dc">Fx ' + escapeHtml(componentForce(fx2)) + '</b><b style="display:block;color:#c4553d">Fy ' + escapeHtml(componentForce(fy2)) + '</b><small>' + escapeHtml(tr('forceComponents')) + '</small></div><div class="scheme-result"><strong>Δx / Δy</strong><b>' + escapeHtml(fmtValue(projectionX, 2)) + ' / ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</b><small>' + escapeHtml(tr('projectionDetail')) + '</small></div><div class="scheme-result"><strong>' + escapeHtml(tr('angleShape')) + '</strong><b>' + escapeHtml(angleShapeText) + '</b><small>H = ' + escapeHtml(fmtValue(arm, 2)) + ' m · β = ' + escapeHtml(fmtValue(beta, 1)) + '°</small></div>';
     }
   }
 
@@ -1214,7 +1360,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
         if (mode === 'L') {
           maxFx = Math.max(Math.abs(femOut.pb1.fx), Math.abs(femOut.pb2.fx));
           maxFy = Math.max(Math.abs(femOut.pb1.fy), Math.abs(femOut.pb2.fy));
-          rows.push([tr('betaDetail'), fmtValue(beta, 1) + '°'], [tr('forceComponents'), tr('componentNote')]);
+          rows.push([tr('betaDetail'), fmtValue(beta, 1) + '°'], [tr('angleShape'), tr(lAngleShape(beta))], [tr('forceComponents'), tr('componentNote')]);
         }
         rows.push([tr('reactions'), tr('coordinate')]);
         [['PB1', femOut.pb1], ['PB2', femOut.pb2]].forEach(function (item) {
@@ -1281,7 +1427,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
         wall: wall
       };
       try { draw(); } catch (drawError) { console.warn('Schéma nelze vykreslit:', drawError); }
-      id('schemeText').textContent = mode === 'L' ? tr('betaDetail') + ' = ' + fmtValue(beta, 1) + '°. ' + tr('componentNote') + ' ' + tr('bends') : (mode === 'bellows' ? tr('bellows') : (['U', 'Z'].indexOf(mode) !== -1 ? tr('bends') : tr('stressNote')));
+      id('schemeText').textContent = mode === 'L' ? tr('betaDetail') + ' = ' + fmtValue(beta, 1) + '° (' + tr(lAngleShape(beta)) + '). ' + tr('componentNote') + ' ' + tr('bends') : (mode === 'bellows' ? tr('bellows') : (['U', 'Z'].indexOf(mode) !== -1 ? tr('bends') : tr('stressNote')));
       id('catalogInfo').textContent = groupLabel(group) + ': ' + tr('material');
       if (typeof bupProductCheck === 'function') bupProductCheck();
       renderStatus([id('anchorRotation').value === 'fixed' ? tr('fixedAnchor') : tr('freeAnchor')].concat(messages));
