@@ -328,7 +328,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
 </style>
 <script id="engineering-safety-upgrade">
 /*
- * Walraven COMPENSATION – engineering safety layer 1.1.1
+ * Walraven COMPENSATION – engineering safety layer 1.1.2
  *
  * This is a transparent preliminary calculation layer. It intentionally does
  * not claim compliance with a piping design code or replace a design review.
@@ -376,6 +376,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       bellowsHelp: 'Síla tlaku používá účinnou plochu výrobce. U táhel, kloubů a tlakově vyváženého provedení nelze sílu do PB určit bez specifikace výrobce.',
       forceLabel: 'Orientační obálka síly',
       stressLabel: 'Elastické osové napětí',
+      forceXLabel: 'Max. |Fx| v pevných bodech',
+      forceYLabel: 'Max. |Fy| v pevných bodech',
+      forceComponents: 'Složky reakcí Fx / Fy',
+      componentNote: 'Fx je vodorovná složka ve směru X; Fy je kolmá složka ve směru Y.',
+      componentFrictionNote: 'Tření není rozděleno do Fx/Fy; jeho směr závisí na skutečném pohybu a vedení.',
       screening: 'Předběžná technická kontrola',
       status: 'Stav technické kontroly',
       warning: 'Výsledky jsou pouze předběžné. Neobsahují posouzení podle potrubního předpisu ani návrh ocelové konstrukce.',
@@ -401,7 +406,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       multiplier: 'Uživatelský násobek obálky',
       envelope: 'Orientační obálka |R| + tření',
       reactions: 'Reakce v PB – 2D model',
-      coordinate: 'Složky jsou ve směrech X/Y modelového schématu; Mz je moment do podpěrné konstrukce.',
+      coordinate: 'Fx je vodorovná složka ve směru X, Fy je kolmá složka ve směru Y; Mz je moment do podpěrné konstrukce.',
       guideReaction: 'Reakce příčného vedení',
       stressNote: 'Platí pouze pro přímé potrubí s úplně zablokovaným osovým posuvem; nejde o kódovou kontrolu napětí.',
       stressUnavailable: 'Pro tento režim se normálové napětí neuvádí: reakce PB není osová síla v průřezu.',
@@ -415,7 +420,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Kontrola vedení axiálního vlnovce',
       firstGuide: '1. vedení',
       secondGuide: '2. vedení',
-      header: 'verze HTML 1.1.1 · bezpečnostní kontrola',
+      header: 'verze HTML 1.1.2 · bezpečnostní kontrola',
       error: 'Chyba bezpečnostního výpočtu: '
     },
     en: {
@@ -447,6 +452,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       bellowsHelp: 'Pressure thrust uses the manufacturer effective area. Anchor force for tied, hinged and pressure-balanced units needs the manufacturer specification.',
       forceLabel: 'Screening force envelope',
       stressLabel: 'Elastic axial stress',
+      forceXLabel: 'Max. |Fx| at anchors',
+      forceYLabel: 'Max. |Fy| at anchors',
+      forceComponents: 'Reaction components Fx / Fy',
+      componentNote: 'Fx is the horizontal X-direction component; Fy is the perpendicular Y-direction component.',
+      componentFrictionNote: 'Friction is not assigned to Fx/Fy because its direction depends on actual movement and guiding.',
       screening: 'Preliminary engineering check',
       status: 'Engineering check status',
       warning: 'The results are preliminary only. They do not provide a piping-code check or structural-steel design.',
@@ -472,7 +482,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       multiplier: 'User envelope multiplier',
       envelope: 'Screening envelope |R| + friction',
       reactions: 'Anchor reactions – 2D model',
-      coordinate: 'Components are in the X/Y directions of the model schematic; Mz is the moment into the supporting structure.',
+      coordinate: 'Fx is the horizontal X-direction component and Fy the perpendicular Y-direction component; Mz is the moment into the supporting structure.',
       guideReaction: 'Lateral-guide reaction',
       stressNote: 'Applies only to a straight pipe with fully restrained axial movement; it is not a code stress check.',
       stressUnavailable: 'Axial stress is not shown for this layout: anchor reaction is not an axial section force.',
@@ -486,7 +496,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Axial-bellows guide check',
       firstGuide: '1st guide',
       secondGuide: '2nd guide',
-      header: 'HTML version 1.1.1 · engineering safety check',
+      header: 'HTML version 1.1.2 · engineering safety check',
       error: 'Safety calculation error: '
     },
     pl: {
@@ -518,6 +528,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       bellowsHelp: 'Siła ciśnienia wykorzystuje efektywną powierzchnię producenta. Siły w punktach stałych dla mieszków z cięgnami, przegubowych i wyrównanych wymagają specyfikacji producenta.',
       forceLabel: 'Orientacyjna obwiednia siły',
       stressLabel: 'Sprężyste naprężenie osiowe',
+      forceXLabel: 'Maks. |Fx| w punktach stałych',
+      forceYLabel: 'Maks. |Fy| w punktach stałych',
+      forceComponents: 'Składowe reakcji Fx / Fy',
+      componentNote: 'Fx to składowa pozioma w kierunku X; Fy to składowa prostopadła w kierunku Y.',
+      componentFrictionNote: 'Tarcie nie jest rozdzielane na Fx/Fy, ponieważ jego kierunek zależy od rzeczywistego ruchu i prowadzenia.',
       screening: 'Wstępna kontrola techniczna',
       status: 'Stan kontroli technicznej',
       warning: 'Wyniki są wyłącznie wstępne. Nie stanowią sprawdzenia według normy rurociągowej ani projektu konstrukcji stalowej.',
@@ -543,7 +558,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       multiplier: 'Współczynnik obwiedni użytkownika',
       envelope: 'Orientacyjna obwiednia |R| + tarcie',
       reactions: 'Reakcje punktów stałych – model 2D',
-      coordinate: 'Składowe są w kierunkach X/Y schematu; Mz jest momentem przekazywanym do konstrukcji.',
+      coordinate: 'Fx jest składową poziomą w kierunku X, a Fy prostopadłą w kierunku Y; Mz jest momentem przekazywanym do konstrukcji.',
       guideReaction: 'Reakcja prowadzenia poprzecznego',
       stressNote: 'Dotyczy tylko rury prostej z całkowicie zablokowanym ruchem osiowym; nie jest kontrolą normową.',
       stressUnavailable: 'Naprężenie osiowe nie jest podawane: reakcja punktu stałego nie jest siłą osiową przekroju.',
@@ -557,7 +572,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Kontrola prowadzeń mieszków osiowych',
       firstGuide: '1. prowadzenie',
       secondGuide: '2. prowadzenie',
-      header: 'HTML 1.1.1 · kontrola bezpieczeństwa technicznego',
+      header: 'HTML 1.1.2 · kontrola bezpieczeństwa technicznego',
       error: 'Błąd kontroli technicznej: '
     },
     sk: {
@@ -589,6 +604,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       bellowsHelp: 'Tlakový ťah používa účinnú plochu výrobcu. Sily do PB pri tiahlach, kĺboch a tlakovom vyvážení vyžadujú špecifikáciu výrobcu.',
       forceLabel: 'Orientačná obálka sily',
       stressLabel: 'Elastické osové napätie',
+      forceXLabel: 'Max. |Fx| v pevných bodoch',
+      forceYLabel: 'Max. |Fy| v pevných bodoch',
+      forceComponents: 'Zložky reakcií Fx / Fy',
+      componentNote: 'Fx je vodorovná zložka v smere X; Fy je kolmá zložka v smere Y.',
+      componentFrictionNote: 'Trenie nie je rozdelené do Fx/Fy; jeho smer závisí od skutočného pohybu a vedenia.',
       screening: 'Predbežná technická kontrola',
       status: 'Stav technickej kontroly',
       warning: 'Výsledky sú iba predbežné. Neobsahujú posúdenie podľa potrubného predpisu ani návrh oceľovej konštrukcie.',
@@ -614,7 +634,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       multiplier: 'Používateľský násobok obálky',
       envelope: 'Orientačná obálka |R| + trenie',
       reactions: 'Reakcie v PB – 2D model',
-      coordinate: 'Zložky sú v smeroch X/Y modelovej schémy; Mz je moment do podpornej konštrukcie.',
+      coordinate: 'Fx je vodorovná zložka v smere X a Fy kolmá zložka v smere Y; Mz je moment do podpornej konštrukcie.',
       guideReaction: 'Reakcia priečneho vedenia',
       stressNote: 'Platí iba pre priame potrubie s úplne zablokovaným osovým posuvom; nejde o kontrolu podľa predpisu.',
       stressUnavailable: 'Osové napätie sa neuvádza: reakcia PB nie je osovou silou v priereze.',
@@ -628,7 +648,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       guideCheck: 'Kontrola vedenia axiálneho vlnovca',
       firstGuide: '1. vedenie',
       secondGuide: '2. vedenie',
-      header: 'HTML 1.1.1 · bezpečnostná technická kontrola',
+      header: 'HTML 1.1.2 · bezpečnostná technická kontrola',
       error: 'Chyba bezpečnostného výpočtu: '
     }
   };
@@ -729,8 +749,15 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     if (subtitle) subtitle.textContent = tr('header');
     var forceMetric = id('force') && id('force').closest('.metric');
     var stressMetric = id('stress') && id('stress').closest('.metric');
-    if (forceMetric) forceMetric.querySelector('span').textContent = tr('forceLabel');
-    if (stressMetric) stressMetric.querySelector('span').textContent = tr('stressLabel');
+    var componentMode = mode === 'L';
+    if (forceMetric) {
+      forceMetric.querySelector('span').textContent = componentMode ? tr('forceXLabel') : tr('forceLabel');
+      if (componentMode && forceMetric.querySelector('small')) forceMetric.querySelector('small').textContent = 'kN';
+    }
+    if (stressMetric) {
+      stressMetric.querySelector('span').textContent = componentMode ? tr('forceYLabel') : tr('stressLabel');
+      if (componentMode && stressMetric.querySelector('small')) stressMetric.querySelector('small').textContent = 'kN';
+    }
     var factorField = id('factor') && id('factor').closest('.field');
     if (factorField && factorField.querySelector('label')) factorField.querySelector('label').textContent = tr('multiplier') + ' [-]';
     var armField = id('arm') && id('arm').closest('.field');
@@ -973,6 +1000,12 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
     var reaction2 = result && result.femOut ? result.femOut.r2 : (result ? result.reactionN : 0);
     var reactionVector1 = result && result.femOut ? result.femOut.pb1 : null;
     var reactionVector2 = result && result.femOut ? result.femOut.pb2 : null;
+    var component = function (vector, key) { return vector && finite(vector[key]) ? vector[key] : 0; };
+    var fx1 = component(reactionVector1, 'fx');
+    var fy1 = component(reactionVector1, 'fy');
+    var fx2 = component(reactionVector2, 'fx');
+    var fy2 = component(reactionVector2, 'fy');
+    var componentForce = function (forceN) { return (forceN > 0 ? '+' : '') + fmtValue(forceN / 1000, 3) + ' kN'; };
     var showDimensions = !id('layerDimensions') || id('layerDimensions').checked;
     var showForces = !id('layerForces') || id('layerForces').checked;
     var showDeformation = !id('layerDeformation') || id('layerDeformation').checked;
@@ -1007,8 +1040,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       '<text x="' + n(elbow[0] + 57 * Math.cos(betaRad / 2), 1) + '" y="' + n(elbow[1] - 57 * Math.sin(betaRad / 2), 1) + '" text-anchor="middle" font-size="15" font-weight="800" fill="#8b5a20">β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text>',
       projections
     ].join('') : '';
-    var anchor = function (point, label, reaction) {
-      return '<g><circle cx="' + n(point[0], 1) + '" cy="' + n(point[1], 1) + '" r="11" fill="#ffffff" stroke="#a84237" stroke-width="2"/><path d="M' + coord(point[0], point[1] + 8) + 'l-20 25h40z" fill="#d89b90" stroke="#a84237" stroke-width="2"/><path d="M' + coord(point[0] - 23, point[1] + 34) + 'h46" stroke="#8e4c43" stroke-width="3"/><rect x="' + n(point[0] - 58, 1) + '" y="' + n(Math.max(34, point[1] - 92), 1) + '" width="116" height="43" rx="9" fill="#eaf2ff" stroke="#aac6eb"/><text x="' + n(point[0], 1) + '" y="' + n(Math.max(52, point[1] - 74), 1) + '" text-anchor="middle" font-size="13" font-weight="700" fill="#235b97">' + label + '</text><text x="' + n(point[0], 1) + '" y="' + n(Math.max(69, point[1] - 57), 1) + '" text-anchor="middle" font-size="14" font-weight="700" fill="#174fc1">|R| ' + escapeHtml(fmtValue(reaction / 1000, 3)) + ' kN</text></g>';
+    var anchor = function (point, label, vector) {
+      var boxY = Math.max(28, point[1] - 112);
+      var fx = component(vector, 'fx');
+      var fy = component(vector, 'fy');
+      return '<g><circle cx="' + n(point[0], 1) + '" cy="' + n(point[1], 1) + '" r="11" fill="#ffffff" stroke="#a84237" stroke-width="2"/><path d="M' + coord(point[0], point[1] + 8) + 'l-20 25h40z" fill="#d89b90" stroke="#a84237" stroke-width="2"/><path d="M' + coord(point[0] - 23, point[1] + 34) + 'h46" stroke="#8e4c43" stroke-width="3"/><rect x="' + n(point[0] - 64, 1) + '" y="' + n(boxY, 1) + '" width="128" height="62" rx="9" fill="#eaf2ff" stroke="#aac6eb"/><text x="' + n(point[0], 1) + '" y="' + n(boxY + 17, 1) + '" text-anchor="middle" font-size="13" font-weight="800" fill="#235b97">' + label + '</text><text x="' + n(point[0], 1) + '" y="' + n(boxY + 35, 1) + '" text-anchor="middle" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx)) + '</text><text x="' + n(point[0], 1) + '" y="' + n(boxY + 52, 1) + '" text-anchor="middle" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy)) + '</text></g>';
     };
     var guides = '';
     if (result && result.femOut && result.femOut.guides) {
@@ -1019,31 +1055,49 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
         guides += '<g><rect x="' + n(mapped[0] - 10, 1) + '" y="' + n(mapped[1] + 10, 1) + '" width="20" height="7" rx="2" fill="#c8b2a5" stroke="#926f5c"/><text x="' + n(mapped[0], 1) + '" y="' + n(mapped[1] + 32, 1) + '" text-anchor="middle" font-size="10" fill="#6d523f">KP</text></g>';
       });
     }
-    var reactionArrow = function (point, vector, label) {
-      if (!vector || !finite(vector.fx) || !finite(vector.fy)) return '';
-      var magnitude = Math.hypot(vector.fx, vector.fy);
-      if (magnitude < 1) return '';
-      var unitX = vector.fx / magnitude;
-      var unitY = -vector.fy / magnitude;
-      var start = [point[0] + unitX * 22, point[1] + unitY * 22];
-      var end = [point[0] + unitX * 74, point[1] + unitY * 74];
-      var caption = [point[0] + unitX * 87, point[1] + unitY * 87 + 4];
-      return '<g><path d="M' + coord(start[0], start[1]) + ' L' + coord(end[0], end[1]) + '" stroke="#2459dc" stroke-width="4" marker-end="url(#reactionArrow)"/><text x="' + n(caption[0], 1) + '" y="' + n(caption[1], 1) + '" text-anchor="middle" font-size="12" font-weight="800" fill="#174fc1">' + label + '</text></g>';
+    var componentArrow = function (point, forceN, axis, label, side) {
+      if (!finite(forceN) || Math.abs(forceN) < 1) return '';
+      var direction = forceN > 0 ? 1 : -1;
+      var start;
+      var end;
+      var caption;
+      var marker;
+      var color;
+      var anchor;
+      if (axis === 'x') {
+        var horizontalY = point[1] + 57;
+        start = [point[0] + direction * 14, horizontalY];
+        end = [point[0] + direction * 66, horizontalY];
+        caption = [end[0] + direction * 11, end[1] + 4];
+        marker = 'fxArrow';
+        color = '#2459dc';
+        anchor = direction > 0 ? 'start' : 'end';
+      } else {
+        var verticalX = point[0] + side * 66;
+        var screenDirection = forceN > 0 ? -1 : 1;
+        start = [verticalX, point[1] + screenDirection * 14];
+        end = [verticalX, point[1] + screenDirection * 66];
+        caption = [verticalX + side * 8, end[1] + 4];
+        marker = 'fyArrow';
+        color = '#c4553d';
+        anchor = side > 0 ? 'start' : 'end';
+      }
+      return '<g><path d="M' + coord(start[0], start[1]) + ' L' + coord(end[0], end[1]) + '" stroke="' + color + '" stroke-width="4" marker-end="url(#' + marker + ')"/><text x="' + n(caption[0], 1) + '" y="' + n(caption[1], 1) + '" text-anchor="' + anchor + '" font-size="12" font-weight="800" fill="' + color + '">' + label + '</text></g>';
     };
-    var forces = showForces ? reactionArrow(p1, reactionVector1, 'R1') + reactionArrow(p2, reactionVector2, 'R2') : '';
-    var sidePanel = '<rect x="800" y="42" width="180" height="238" rx="13" fill="#f5f9fc" stroke="#dbe5ed"/>' +
+    var forces = showForces ? componentArrow(p1, fx1, 'x', 'Fx', -1) + componentArrow(p1, fy1, 'y', 'Fy', -1) + componentArrow(p2, fx2, 'x', 'Fx', 1) + componentArrow(p2, fy2, 'y', 'Fy', 1) : '';
+    var sidePanel = '<rect x="800" y="42" width="180" height="278" rx="13" fill="#f5f9fc" stroke="#dbe5ed"/>' +
       '<text x="820" y="70" font-size="14" font-weight="800" fill="#375971">β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text>' +
       '<text x="820" y="96" font-size="12" fill="#6d8394">L = ' + escapeHtml(fmtValue(length, 2)) + ' m</text>' +
       '<text x="820" y="119" font-size="12" fill="#6d8394">H = ' + escapeHtml(fmtValue(arm, 2)) + ' m</text>' +
       '<text x="820" y="142" font-size="12" fill="#7a613d">Δx = ' + escapeHtml(fmtValue(projectionX, 2)) + ' m</text>' +
       '<text x="820" y="165" font-size="12" fill="#7a613d">Δy = ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</text>' +
-      '<text x="820" y="197" font-size="12" fill="#6d8394">PB1 |R|</text><text x="820" y="218" font-size="16" font-weight="800" fill="#174fc1">' + escapeHtml(fmtValue(reaction1 / 1000, 3)) + ' kN</text>' +
-      '<text x="820" y="244" font-size="12" fill="#6d8394">PB2 |R|</text><text x="820" y="265" font-size="16" font-weight="800" fill="#174fc1">' + escapeHtml(fmtValue(reaction2 / 1000, 3)) + ' kN</text>';
-    var svg = '<defs><marker id="reactionArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2459dc"/></marker></defs><rect width="1000" height="420" rx="14" fill="#ffffff"/><rect x="18" y="18" width="760" height="370" rx="12" fill="#f8fbfd" stroke="#dbe5ed"/><text x="42" y="49" font-size="19" font-weight="800" fill="#173a52">' + escapeHtml(tr('lTitle')) + ' · β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text><path d="' + route + '" fill="none" stroke="#e9f8f5" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#168c87" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#eefdfa" stroke-width="2.4" stroke-dasharray="11 6 2 6" stroke-linejoin="round" stroke-linecap="round"/>' + deformation + dimensions + guides + anchor(p1, 'PB1', reaction1) + anchor(p2, 'PB2', reaction2) + forces + sidePanel + '<text x="20" y="407" font-size="12" fill="#79909d">' + escapeHtml(tr('coordinate')) + '</text>';
+      '<text x="820" y="193" font-size="12" font-weight="800" fill="#375971">PB1</text><text x="820" y="213" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx1)) + '</text><text x="820" y="231" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy1)) + '</text>' +
+      '<text x="820" y="257" font-size="12" font-weight="800" fill="#375971">PB2</text><text x="820" y="277" font-size="12" font-weight="700" fill="#2459dc">Fx ' + escapeHtml(componentForce(fx2)) + '</text><text x="820" y="295" font-size="12" font-weight="700" fill="#c4553d">Fy ' + escapeHtml(componentForce(fy2)) + '</text>';
+    var svg = '<defs><marker id="fxArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2459dc"/></marker><marker id="fyArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="strokeWidth" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c4553d"/></marker></defs><rect width="1000" height="420" rx="14" fill="#ffffff"/><rect x="18" y="18" width="760" height="370" rx="12" fill="#f8fbfd" stroke="#dbe5ed"/><text x="42" y="49" font-size="19" font-weight="800" fill="#173a52">' + escapeHtml(tr('lTitle')) + ' · β = ' + escapeHtml(fmtValue(beta, 1)) + '°</text><path d="' + route + '" fill="none" stroke="#e9f8f5" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#168c87" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/><path d="' + route + '" fill="none" stroke="#eefdfa" stroke-width="2.4" stroke-dasharray="11 6 2 6" stroke-linejoin="round" stroke-linecap="round"/>' + deformation + dimensions + guides + anchor(p1, 'PB1', reactionVector1) + anchor(p2, 'PB2', reactionVector2) + forces + sidePanel + '<text x="20" y="407" font-size="12" fill="#79909d">' + escapeHtml(tr('coordinate')) + '</text>';
     id('diagram').innerHTML = svg;
     id('diagram').setAttribute('aria-label', tr('lTitle') + ', β = ' + fmtValue(beta, 1) + '°');
     if (id('schemeResults')) {
-      id('schemeResults').innerHTML = '<div class="scheme-result"><strong>PB1 · |R|</strong><b>' + escapeHtml(fmtValue(reaction1 / 1000, 3)) + ' kN</b><small>β = ' + escapeHtml(fmtValue(beta, 1)) + '°</small></div><div class="scheme-result"><strong>PB2 · |R|</strong><b>' + escapeHtml(fmtValue(reaction2 / 1000, 3)) + ' kN</b><small>β = ' + escapeHtml(fmtValue(beta, 1)) + '°</small></div><div class="scheme-result"><strong>Δx / Δy</strong><b>' + escapeHtml(fmtValue(projectionX, 2)) + ' / ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</b><small>' + escapeHtml(tr('projectionDetail')) + '</small></div><div class="scheme-result"><strong>H</strong><b>' + escapeHtml(fmtValue(arm, 2)) + ' m</b><small>' + escapeHtml(tr('armL')) + '</small></div>';
+      id('schemeResults').innerHTML = '<div class="scheme-result"><strong>PB1 · Fx / Fy</strong><b style="display:block;color:#2459dc">Fx ' + escapeHtml(componentForce(fx1)) + '</b><b style="display:block;color:#c4553d">Fy ' + escapeHtml(componentForce(fy1)) + '</b><small>' + escapeHtml(tr('forceComponents')) + '</small></div><div class="scheme-result"><strong>PB2 · Fx / Fy</strong><b style="display:block;color:#2459dc">Fx ' + escapeHtml(componentForce(fx2)) + '</b><b style="display:block;color:#c4553d">Fy ' + escapeHtml(componentForce(fy2)) + '</b><small>' + escapeHtml(tr('forceComponents')) + '</small></div><div class="scheme-result"><strong>Δx / Δy</strong><b>' + escapeHtml(fmtValue(projectionX, 2)) + ' / ' + escapeHtml(fmtValue(projectionY, 2)) + ' m</b><small>' + escapeHtml(tr('projectionDetail')) + '</small></div><div class="scheme-result"><strong>H</strong><b>' + escapeHtml(fmtValue(arm, 2)) + ' m</b><small>' + escapeHtml(tr('armL')) + '</small></div>';
     }
   }
 
@@ -1097,6 +1151,11 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       var reactionKnown = true;
       var stress = null;
       var femOut = null;
+      var maxFx = null;
+      var maxFy = null;
+      var formatSignedForce = function (forceN) {
+        return (forceN > 0 ? '+' : '') + fmtValue(forceN / 1000, 3) + ' kN';
+      };
 
       if (mode === 'straight') {
         /*
@@ -1152,22 +1211,27 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
           femOut.guides = stations.map(function (station) { return { station: station / 1000, orientation: 'free', forceN: 0 }; });
         }
         reaction = Math.max(femOut.r1, femOut.r2);
-        if (mode === 'L') rows.push([tr('betaDetail'), fmtValue(beta, 1) + '°']);
+        if (mode === 'L') {
+          maxFx = Math.max(Math.abs(femOut.pb1.fx), Math.abs(femOut.pb2.fx));
+          maxFy = Math.max(Math.abs(femOut.pb1.fy), Math.abs(femOut.pb2.fy));
+          rows.push([tr('betaDetail'), fmtValue(beta, 1) + '°'], [tr('forceComponents'), tr('componentNote')]);
+        }
         rows.push([tr('reactions'), tr('coordinate')]);
         [['PB1', femOut.pb1], ['PB2', femOut.pb2]].forEach(function (item) {
           var label = item[0];
           var point = item[1];
           rows.push(
-            [label + ' – Fx', fmtValue(point.fx / 1000, 3) + ' kN'],
-            [label + ' – Fy', fmtValue(point.fy / 1000, 3) + ' kN'],
-            [label + ' – Mz', fmtValue(point.mz / 1000000, 3) + ' kN·m'],
-            [label + ' – |R|', fmtValue(Math.hypot(point.fx, point.fy) / 1000, 3) + ' kN']
+            [label + ' – Fx', formatSignedForce(point.fx)],
+            [label + ' – Fy', formatSignedForce(point.fy)],
+            [label + ' – Mz', fmtValue(point.mz / 1000000, 3) + ' kN·m']
           );
+          if (mode !== 'L') rows.push([label + ' – |R|', fmtValue(Math.hypot(point.fx, point.fy) / 1000, 3) + ' kN']);
         });
         femOut.guides.forEach(function (guide, index) {
           rows.push([tr('guideReaction') + ' ' + (index + 1), guide.orientation === 'free' ? tr('noData') : fmtValue(guide.forceN / 1000, 3) + ' kN']);
         });
         messages.push(tr('bends'), tr('supports'));
+        if (mode === 'L') messages.push(tr('componentNote'));
       }
 
       var slidingFriction = ['L', 'U', 'Z'].indexOf(mode) !== -1 && id('useGuides').checked ? (femOut ? femOut.guides.length : 0) * value('guideLoad') * value('guideMu') : 0;
@@ -1175,19 +1239,21 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
       var envelope = reactionKnown ? (reaction + frictionEnvelope) * factor : null;
       rows.push(
         [tr('friction'), fmtValue(frictionEnvelope, 0) + ' N'],
-        [tr('multiplier'), fmtValue(factor, 2) + ' [-]'],
-        [tr('envelope'), envelope === null ? tr('noData') : fmtValue(envelope / 1000, 3) + ' kN']
+        [tr('multiplier'), fmtValue(factor, 2) + ' [-]']
       );
+      if (mode === 'L') rows.push([tr('componentFrictionNote'), fmtValue(frictionEnvelope, 0) + ' N']);
+      else rows.push([tr('envelope'), envelope === null ? tr('noData') : fmtValue(envelope / 1000, 3) + ' kN']);
       if (mode !== 'straight') rows.push([tr('stressNote'), tr('stressUnavailable')]);
 
+      var lComponents = mode === 'L' && femOut && finite(maxFx) && finite(maxFy);
       id('elong').textContent = fmtValue(freeExpansion, 2);
-      id('force').textContent = envelope === null ? '—' : fmtValue(envelope / 1000, 3);
-      id('stress').textContent = stress === null ? '—' : fmtValue(stress, 2);
+      id('force').textContent = lComponents ? fmtValue(maxFx / 1000, 3) : (envelope === null ? '—' : fmtValue(envelope / 1000, 3));
+      id('stress').textContent = lComponents ? fmtValue(maxFy / 1000, 3) : (stress === null ? '—' : fmtValue(stress, 2));
       id('dt').textContent = fmtValue(deltaT, 1);
       id('area').textContent = fmtValue(area, 1);
       id('stiffness').textContent = fmtValue(modulus * area / (length * 1000), 0);
       var stressUnit = id('stress').parentElement.querySelector('small');
-      if (stressUnit) stressUnit.textContent = stress === null ? tr('screening') : 'MPa';
+      if (stressUnit) stressUnit.textContent = lComponents ? 'kN' : (stress === null ? tr('screening') : 'MPa');
       id('details').innerHTML = rowsToHtml(rows);
 
       last = {
@@ -1202,6 +1268,8 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
         dilation: freeExpansion,
         forceN: envelope || 0,
         reactionN: reactionKnown ? reaction : 0,
+        maxFxN: maxFx,
+        maxFyN: maxFy,
         stressMPa: stress,
         rows: rows,
         femOut: femOut,
@@ -1213,7 +1281,7 @@ populate();setLanguage(['cs','en','pl','sk'].includes((function(){try{return loc
         wall: wall
       };
       try { draw(); } catch (drawError) { console.warn('Schéma nelze vykreslit:', drawError); }
-      id('schemeText').textContent = mode === 'L' ? tr('betaDetail') + ' = ' + fmtValue(beta, 1) + '°. ' + tr('bends') : (mode === 'bellows' ? tr('bellows') : (['U', 'Z'].indexOf(mode) !== -1 ? tr('bends') : tr('stressNote')));
+      id('schemeText').textContent = mode === 'L' ? tr('betaDetail') + ' = ' + fmtValue(beta, 1) + '°. ' + tr('componentNote') + ' ' + tr('bends') : (mode === 'bellows' ? tr('bellows') : (['U', 'Z'].indexOf(mode) !== -1 ? tr('bends') : tr('stressNote')));
       id('catalogInfo').textContent = groupLabel(group) + ': ' + tr('material');
       if (typeof bupProductCheck === 'function') bupProductCheck();
       renderStatus([id('anchorRotation').value === 'fixed' ? tr('fixedAnchor') : tr('freeAnchor')].concat(messages));
